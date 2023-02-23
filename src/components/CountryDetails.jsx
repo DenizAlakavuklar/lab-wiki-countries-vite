@@ -3,10 +3,10 @@ import { Routes, Route, Link, useParams } from "react-router-dom";
 
 function CountryDetails({ countries }) {
  
-    const { alpha } = useParams()
+    const { alpha3Code } = useParams()
     
     const foundCountry = countries.find((oneCountry) => {
-        return oneCountry.alpha === alpha;
+        return oneCountry.alpha3Code === alpha3Code;
       });
 
       console.log(foundCountry.area)

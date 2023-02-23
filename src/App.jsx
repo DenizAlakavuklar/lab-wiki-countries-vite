@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <div >
         <Routes>
-          <Route path="/:alpha" element={<CountryDetails countries={countries} />} />
+          <Route path="/:alpha3Code" element={<CountryDetails countries={countries} />} />
 
         </Routes>
 
